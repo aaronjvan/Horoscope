@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cutie Hack</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar Section-->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <img src="images/cutielogo.png" alt="logo">
+            <div class ="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__btn">
+                    <a href="/" class="button">Get started</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Hero Section-->
+    <div class="main">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>Discover new music based off your daily horoscope.</h1>
+                <br></br>
+                <p>Fill in your birthday to find songs that match the mood of your horoscope.</p>
+            </div>
+            <div class="main__img--container">
+                <img src="images/horoscope.png" alt="image" id="main__img">
+            </div>
+        </div>
+        <div class = "main__horoscope">
+            <h1>Let's get started!</h1>
+            <br></br>
+            <p>Enter your birthday to receive your daily horoscope. Then, we will find a song for you that matches it!</p>
+            <br></br>
+            <p>Enter birthday</p>
+            <br></br>
+            <form>
+                <span>
+                    <label for="day"></label>
+                    <select name="day" id="day"></select>
+                </span>
+                <span>
+                    <label for="month"></label>
+                    <select name="month" id="month"></select>
+                </span>
+                <span>
+                    <label for="year"></label>
+                    <select name="year" id="year"></select>
+                </span>
+            </form>
+            <!--JavaScript-->
+            <script src="script.js"></script>
+        </div>
+    </div>
+</body>
+</html>
