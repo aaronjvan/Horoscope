@@ -13,12 +13,12 @@
     <!-- Header -->
     <nav class="header">
         <div class="header_container">
-            <img src="images/cutielogo.png" alt="logo">
+            <img src="images/newcutielogo.png" alt="logo">
             <span class="bar"></span>
             <ul class="header_menu">
-                <li class="header_btn">
+                <!-- <li class="header_btn"> 
                     <a href="/" class="button">Get started</a>
-                </li>
+                </li> -->
             </ul>
         </div>
     </nav>
@@ -30,6 +30,8 @@
                 <h1>Discover new music based off your daily horoscope.</h1>
                 <br></br>
                 <p>Fill in your birthday to find songs that match the mood of your horoscope.</p>
+                <br></br>
+                <img src="images/poweredby.png" height="25" weight ="50">
             </div>
             <div class="main_img--container">
                 <img src="images/horoscope.png" alt="image" id="main__img">
@@ -39,8 +41,6 @@
             <h1>Let's get started!</h1>
             <br></br>
             <p>Enter your birthday to receive your daily horoscope. Then, we will find a playlist for you that matches it!</p>
-            <br></br>
-            <p>Enter birthday</p>
             <br></br>
             <!-- <form>
                 <span>
@@ -57,9 +57,9 @@
                 </span>
 
             </form> -->
-            <button onclick="horoscope('hi')">Click Me</button>
             <input type="text" id="user-input-1"/>
             <input type="text" id="user-input-2"/>
+            <button onclick="horoscope('hi')" class="submit">Find my playlist</button>
             <br></br>
             <div id="display"></div>
             <br></br>

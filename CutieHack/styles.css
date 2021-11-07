@@ -59,7 +59,12 @@
     background: #be4d29;
     color: #fff;
 }
- 
+
+.submit {
+    background: #be4d29;
+    color: #fff;
+}
+
 .button:hover {
     background: #ebba00;
 }
