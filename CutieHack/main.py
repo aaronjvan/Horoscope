@@ -9,6 +9,36 @@ moodPlaylist = {"happy": "79QRwz97ZME65XdEp1eqQm?si=4791f0586e104ae5",
                  "angry": "5NAiz92PO6eD61j5lGhrhY?si=07ecbd3dd2744f5c",
                  "scared": "1r4hnyOWexSvylLokn2hUa?si=62928bc1d0ce4756"}
 
+def returnHoroscope(birthMonth, birthDay):
+    horo = Horoscope()
+    sign = getStarSign(str(birthMonth), int(birthDay))
+    data = horo.get_todays_horoscope(sign)
+    dailyMessage = data['horoscope']
+    return dailyMessage
+
+def returnLink(birthMonth, birthDay):
+    horo = Horoscope()
+    sign = getStarSign(str(birthMonth), int(birthDay))
+    data = horo.get_todays_horoscope(sign)
+    dailyMessage = data['horoscope']
+    print(dailyMessage)
+    mood = analyzeText(dailyMessage, 'emotions.txt')
+    #THIS IS THE WHOLE API REQUEST
+    
+    token = getAccessToken(ClientID, ClientSecret)
+    if(mood == " happy"):
+        playlistID = (moodPlaylist.get("happy"))
+    elif(mood == " sad"):
+        playlistID = (moodPlaylist.get("sad"))
+    elif(mood == " angry"):
+        playlistID = (moodPlaylist.get("angry"))
+    elif(mood == " scared"):
+        playlistID = (moodPlaylist.get("scared"))
+    else:
+        playlistID = (moodPlaylist.get("loved"))
+    
+    return "https://open.spotify.com/embed/playlist/"+playlistID
+'''
 if __name__ == "__main__":
     horo = Horoscope()
     birthMonth = input("What month is your birthday? : ")
@@ -35,7 +65,6 @@ if __name__ == "__main__":
     
     tracklist = getPlaylistTracks(token, playlistID)
 
-'''
     for t in tracklist['tracks']['items']:
         print("--------------------")
         for a in t['track']['artists']:
