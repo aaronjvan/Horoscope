@@ -5,7 +5,7 @@
     font-family: 'Fredoka One', cursive;
 }
  
-.navbar {
+.header {
     background: #131313;
     height: 80px;
     display: flex;
@@ -17,7 +17,7 @@
     z-index: 999;
 }
  
-.navbar__container {
+.header_container {
     display: flex;
     justify-content: space-between;
     height: 80px;
@@ -28,24 +28,16 @@
     padding: 0 50px;
 }
  
-#navbar__logo {
-    background-color: #ff8177;
-    background-size: 100%;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    font-size: 2rem;
-}
  
  
-.navbar__menu {
+.header_menu {
     display: flex;
     align-items: center;
     list-style: none;
     text-align: center;
 }
  
-.navbar__btn {
+.header_btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,49 +63,15 @@
 .button:hover {
     background: #ebba00;
 }
- 
-/*@media screen and (max-width: 960px) {
-    .navbar__container{
-        display: flex;
-        justify-content: space-between
-        height: 80px;
-        z-index: 1;
-        width: 100%
-        max-width: 1300px;
-        padding: 0;
-    }
- 
-    #navbar__logo {
-        padding-left: 25px;
-    }
- 
-    #mobile-menu {
-        position: absolute;
-        top: 20%
-        right: 5%
-        transform: translate(5%, 20%);
-    }
- 
-    .navbar__btn {
-        padding-bottom: 2rem;
-    }
- 
-    .button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80%
-        height: 80px;
-        margin: 0;
-    }*/
+
 }
 
-/* Hero Section CSS */
+/* Main Section CSS */
 .main {
     background-color: #131313;
 }
 
-.main__container {
+.main_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -126,17 +84,25 @@
     padding: 0 50px;
 }
 
-.main__content h1 {
+#display{
+    color: white;
+}
+
+#display2{
+    color: white;
+}
+
+.main_content h1 {
     font-size: 3rem;
     color: white;
 }
 
-.main__content p {
+.main_content p {
     font-size: 1.5rem;
     color: grey;
 }
 
-.main__horoscope {
+.main_horoscope {
     align-items: center;
     margin: 0 auto;
     height: 90vh;
@@ -147,12 +113,12 @@
     padding: 0 50px;
 }
 
-.main__horoscope h1{
+.main_horoscope h1{
     font-size: 3 rem;
     color: white;
 }
 
-.main__horoscope p {
+.main_horoscope p {
     font-size: 1.5rem;
     color: grey;
 }
