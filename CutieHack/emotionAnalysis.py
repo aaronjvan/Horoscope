@@ -77,7 +77,7 @@ def getStarSign(birthMonth, birthDay):
             return 'capricorn'
         elif(birthDay >= 20 and birthDay <= 31):
             return 'aquarius'
-    elif(birthMonth == 'Feburary'):
+    elif(birthMonth == 'February'):
         if(birthDay >= 1 and birthDay <= 18 ):
             return 'aquarius'
         elif(birthDay >= 19 and birthDay <= 29):
